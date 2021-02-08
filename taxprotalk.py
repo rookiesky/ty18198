@@ -99,5 +99,8 @@ def main():
         request.logger.info('reptile success,cate:{}'.format(item['cate']))
         time.sleep(2)
         
-        
-main()
+try:        
+    main()
+    request.logger.info('taxprotalk Success')
+except:
+    request.logger.error('taxprotalk Error')

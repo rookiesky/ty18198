@@ -80,4 +80,8 @@ def main():
     body()
     request.logger.info('reptile success')
 
-main()
+try:
+    main()
+    request.logger.info('thetaxbook success')
+except:
+    request.logger.error('thetaxbook Error')
